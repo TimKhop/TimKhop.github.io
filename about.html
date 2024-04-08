@@ -227,32 +227,90 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Контакты</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label for="username" class="col-form-label">Текст сообщения:</label>
+                            <input type="text" class="form-control" id="Message"
+                                placeholder="Сообщение" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="password1" class="form-label">Имя:</label>
+                            <input type="text" class="form-control" id="Name"
+                                placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="password1" class="form-label">Email:</label>
+                            <input type="text" class="form-control" id="Email"
+                                placeholder="Введите ваш Email" required>
+                        </div>
+                    </div>
+                    <div class="container-fluid btn-position btn-regstration">
+                        <div class="btn-row">
+                            <div class="col-lg-2">
+                                <button type="button"
+                                    class="btn btn-warning mt-2 mb-2">Отправить</button>
+                            </div>
+                            <div class="col-lg-10 link-login">
+                                <div class="social-network-link">
+                                    Наши социальные сети:
+                                    <a href="https://t.me/Timofei2003"><img style="width: 28px; margin-inline: 0.5em;"
+                                        src="static/images/TG.png" alt="TG"></a>
+                                    <a href="https://vk.com/tim3002"><img style="width: 46px;"
+                                        src="static/images/VK.png" alt="VK"></a>
+                                </div>
+                                <div class="number-phone mt-2">
+                                    <p>Наш телефон: +7-927-622-38-73</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        </div>
     </section>
 
 
     <footer>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <a href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
-                    <p>Политика конфиденциальности</p>
-                    <p>Все права защищены. 2024</p>
-                </div>
-                <div class="col-lg-4 col-md-12 footer-text text-center media-links">
-                    <div class="footer-about">
-                        <p><a href="about.html">О наc</a></p>
-                        <p><a href="contacts.html">Контакты</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 media-links">
-                    <a href="https://t.me/Timofei2003"><img style="width: 32px; margin-inline: 1em;"
-                            src="static/images/TG.png" alt="TG"></a>
-                    <a href="https://vk.com/tim3002"><img style="width: 50px; margin-inline: 1em;"
-                            src="static/images/VK.png" alt="VK"></a>
-                </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 footer-text text-center">
+              <a href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
+              <p>Политика конфиденциальности</p>
+              <p>Все права защищены. 2024</p>
             </div>
+            <div class="col-lg-4 col-md-12 footer-text text-center media-links">
+              <div class="footer-about">
+                <p><a href="about.html">О наc</a></p>
+                <a class="nav-link-footer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <p>Контакты</p>
+                </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 media-links">
+              <a href="https://t.me/Timofei2003"><img style="width: 32px; margin-inline: 1em;" src="static/images/TG.png"
+                  alt="TG"></a>
+              <a href="https://vk.com/tim3002"><img style="width: 50px; margin-inline: 1em;" src="static/images/VK.png"
+                  alt="VK"></a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
