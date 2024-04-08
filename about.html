@@ -23,7 +23,7 @@
                 <div class="col-lg-10 col-md-12">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="/"><img src="static/images/logo.svg" alt="logo"></a>
+                            <a class="navbar-brand" href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,9 @@
                                         <a class="nav-link" href="catalog.html">Каталог</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="login_in.html"><img src="static/images/login in.svg"
-                                                alt="" width="26" height="26"></a>
+                                        <a class="nav-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                                            <img src="static/images/login in.svg" alt="" width="26" height="26">
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="profile.html"><img src="static/images/profile.svg"
@@ -50,8 +51,8 @@
                                 <form class="d-flex" role="search">
                                     <input class="form-control me-2" type="search" placeholder="Поиск"
                                         aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit"><img
-                                            src="static/images/search.svg" alt=""></button>
+                                    <button class="btn btn-outline-success btn-color btn-color" type="submit"><img
+                                            src="static/images/search.svg" alt="" width="20" height="20"></button>
                                 </form>
                             </div>
                         </div>
@@ -84,8 +85,9 @@
                 </div>
                 <div class="col-lg-1">
                 </div>
+            </div>
+        </div>
     </header>
-
     <section>
         <div class="about">
             <div class="container-fluid mt-4">
@@ -101,21 +103,21 @@
                             стремится удовлетворить потребности клиентов в высококачественной
                             спортивной экипировке, одежде и аксессуарах для самых разнообразных
                             видов спорта.
-                        </p>  
-                        <p> 
+                        </p>
+                        <p>
                             В рамках своей деятельности предоставляет не только продукцию,
                             но и создает уникальный опыт для клиентов. Магазин стремится стать
                             надежным партнером для любителей активного образа жизни, предлагая
                             товары от ведущих мировых брендов и обеспечивая высокий уровень
                             обслуживания.
                         </p>
-                        <p> 
+                        <p>
                             Организация активно участвует в спортивных мероприятиях и
                             инициативах, поддерживая и поощряя здоровый образ жизни. Кроме того,
                             магазин регулярно обновляет свой ассортимент, следя за последними
                             тенденциями в мире спортивной индустрии, чтобы удовлетворять
                             потребности даже самых требовательных клиентов.
-                        </p> 
+                        </p>
                         <p>
                             В целях эффективной организации деятельности, магазин
                             использует современные методы управления и технологии, стремясь
@@ -127,6 +129,104 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Авторизация</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="username" class="form-label">Имя пользователя*</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Введите ваше имя пользователя" required>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="password1" class="form-label">Пароль*</label>
+                                    <input type="password" class="form-control" id="lastName"
+                                        placeholder="Введите ваш пароль" required>
+                                </div>
+                            </div>
+                            <div class="container-fluid btn-position btn-regstration">
+                                <div class="btn-row">
+                                    <div class="col-lg-2">
+                                        <button type="button" class="btn btn-primary mt-2 mb-2">Войти</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Регистрация</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">Имя*</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Введите ваше имя" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Фамилия*</label>
+                                    <input type="text" class="form-control" id="lastName"
+                                        placeholder="Введите вашу фамилию" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="username" class="form-label">Имя пользователя*</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Введите ваше имя пользователя" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email*</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Введите ваш email"
+                                        required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="password1" class="form-label">Пароль*</label>
+                                    <input type="password" class="form-control" id="password1"
+                                        placeholder="Введите пароль" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="password2" class="form-label">Подтверждение пароля*</label>
+                                    <input type="password" class="form-control" id="password2"
+                                        placeholder="Подтвердите пароль" required>
+                                </div>
+                            </div>
+                            <div class="container-fluid btn-position btn-regstration">
+                                <div class="btn-row">
+                                    <div class="col-lg-2">
+                                        <button type="button"
+                                            class="btn btn-primary mt-4 mb-4">Зарегистрироваться</button>
+                                    </div>
+                                    <div class="col-lg-10"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">Авторизация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -134,7 +234,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <a href="/"><img src="static/images/logo.svg" alt="logo"></a>
+                    <a href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
                     <p>Политика конфиденциальности</p>
                     <p>Все права защищены. 2024</p>
                 </div>
