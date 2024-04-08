@@ -161,7 +161,7 @@ header {
     padding-left: 0;
 }
 
-.nav-link a{
+.nav-link, .nav-link-footer {
     cursor: pointer;
 }
 
@@ -171,4 +171,18 @@ header {
 
 .btn-color:hover{
     background-color: #70a5f5;
+}
+
+.text-truncate-container {
+    width: 100%;
+}
+.text-truncate-container p{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.nav-link-footer a:hover{
+    color: #cacaca;
 }
