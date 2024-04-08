@@ -160,3 +160,15 @@ header {
 .id_card_good {
     padding-left: 0;
 }
+
+.nav-link {
+    cursor: pointer;
+}
+
+.btn-color {
+    border: solid 1px #0d6efd
+}
+
+.btn-color:hover{
+    background-color: #70a5f5;
+}
