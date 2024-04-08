@@ -161,7 +161,7 @@ header {
     padding-left: 0;
 }
 
-.nav-link {
+.nav-link a{
     cursor: pointer;
 }
 
