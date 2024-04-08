@@ -161,7 +161,7 @@ header {
     padding-left: 0;
 }
 
-.nav-link, .modal{
+.nav-link {
     cursor: pointer;
 }
 
